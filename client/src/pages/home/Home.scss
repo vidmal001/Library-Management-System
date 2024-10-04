@@ -1,0 +1,7 @@
+.homeContainer {
+  margin: 9rem; //5
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(246px, 1fr));//252
+  grid-auto-rows: minmax(400px, auto);  //344
+  gap: 30px; //20
+}

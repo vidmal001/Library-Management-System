@@ -1,0 +1,164 @@
+.book-details {
+  display: flex;
+  margin-bottom: 11rem;
+
+  .container {
+    display: flex;
+    width: 100%;
+
+    .left {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      
+      .titlesec{
+        display: flex;
+        align-items: center;
+        .title{
+          font-size:1.9rem;
+          font-weight: 700;
+          color: #0c5474;
+          letter-spacing: 5px;
+        }
+        span{
+          margin-left: 1rem;
+          color: #134a58;
+        }
+      }
+     
+      img {
+        max-width: 890px;
+        margin-left:3rem;
+        max-height: 800px;
+        object-fit: contain;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-weight: 500;
+        margin-left: 3rem;
+        font-size:18px;
+       
+      }
+
+      p {
+        font-weight: 300;
+        line-height: 24px;
+        color: #555;
+        margin-left: 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        max-width:890px;
+      }
+
+      .stock {
+        display: flex;
+        align-items: center;
+        img {
+          width: 50px;
+          height: 50px;
+          margin-left: 3rem;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      border: 1px solid lightgray;
+      background: linear-gradient(to right,#e2f5ff, #ffffff);
+      padding: 20px;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: max-content;
+      max-height: 500px;
+      position: sticky;
+      top: 150px;
+      margin-right: 4px;
+      p {
+        color: rgb(0, 0, 0);
+        margin: 10px 0px;
+      }
+
+      .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 20px;
+          }
+        }
+      }
+
+      .features {
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-weight: 300;
+          color: rgb(0, 0, 0);
+          margin-bottom: 6px;
+
+          img {
+            width: 20px;
+          }
+        }
+      }
+
+      .Datepicker {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    
+          h1 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #0c5474;
+          }
+    
+          input {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 200px;
+          }
+        }
+      }
+
+      button {
+        background: linear-gradient(to right, #04363c, #94dfff);
+        padding: 11px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        border: none;
+        font-size: 17px;
+        cursor: pointer;
+        border-radius: 5rem;
+        width: 100%;
+      }
+
+      .warning {
+        color: #ff0000;
+        font-size: 14px;
+        margin: 10px 0px;
+      }
+    
+    }
+  }
+}

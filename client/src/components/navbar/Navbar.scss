@@ -1,0 +1,112 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //background-color: #b6fdde;
+  //color: rgb(23, 23, 23);
+  //background: linear-gradient(to right,#4df7b6, #abf0a5);
+  background: linear-gradient(to right,#4df7b6, hsl(115, 100%, 79%));
+  color: rgb(11, 11, 11);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.5s all ease;
+
+  &.active {
+    background: white;
+    color: black;
+
+    button {
+      background-color: white !important;
+      color: #0e0e0e !important;
+      border: 1px solid #00a603 !important;
+    }
+  }
+
+  .container {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    .logo {
+      font-size: 28px;
+      font-weight: 500;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+
+      span {
+        white-space: nowrap;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 200px;
+          font-weight: 300;
+          color: gray;
+        }
+      }
+
+      button {
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid rgb(15, 14, 14);
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #1dbf73;
+          border-color: #1dbf73;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: calc(100% - 2px);
+    height: 0;
+    border-top: 0.5px solid #ebe9e9;
+    border-bottom: 0.5px solid #ebe9e9;
+  }
+
+  .menu {
+    width: 1400px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+  }
+}

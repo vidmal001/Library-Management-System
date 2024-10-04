@@ -1,0 +1,81 @@
+.createform {
+    display: flex;
+    justify-content: center;
+  
+    .container {
+      width: 1400px;
+      padding: 50px 0px;
+  
+      h1 {
+        width: max-content;
+        margin-bottom: 30px;
+        color: rgb(25, 24, 24);
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .updateinput{
+         margin-left:2rem;
+         padding: 15px;
+         width:50%;
+      }
+      .commonButton{
+       margin-left:3rem;
+       padding:8px;
+       border-radius: 5px;
+       cursor: pointer;
+       border:none;
+       background: linear-gradient(to right,#1e9ba8, #94dfff);
+      }
+      .seperator{
+        margin-top:1rem;
+        margin-bottom: 3rem;
+        color:rgb(151, 255, 4)
+      }
+  
+      .whole {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+  
+        label {
+          color: rgb(15, 14, 14);
+          font-size: 16px;
+          font-weight:400px;
+        }
+  
+        .left,
+        .right {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: space-between;
+  
+          input,
+          select,
+          textarea {
+            padding: 19px;
+          }
+           textarea {
+            padding: 19px;
+          }
+        }
+      }
+      .createbutton {
+      
+        border: none;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: 300;
+        font-size: 14px;
+        background: linear-gradient(to right,#1e9ba8, #94dfff);
+        cursor: pointer;
+        margin-top:4rem;
+        margin-bottom:1rem;
+        width:10%;
+        margin-left:79rem;
+        border-radius: 5px;
+      }
+    }
+  }
+  

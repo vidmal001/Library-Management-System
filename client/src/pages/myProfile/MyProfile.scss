@@ -1,0 +1,57 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3rem;
+  .profile-image {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  .profile-details {
+    width: 600px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    label {
+      width: 150px; // Adjust the width as needed
+      margin-right: 10px;
+    }
+
+    input,
+    textarea {
+      flex: 1;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button{
+      margin-left:30rem;
+      padding:5px;
+      border-radius: 5px;
+      cursor: pointer;
+      width:290px;
+      border:none;
+      background: linear-gradient(to right,#1e9ba8, #94dfff);
+    }
+  }
+}

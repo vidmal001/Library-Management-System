@@ -1,0 +1,31 @@
+.UnApprovedBooks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17rem;
+  .UnApprovedcontainer {
+    width: 1400px;
+    padding: 50px 0px;
+  }
+  .UnAprrovedtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+    font-weight:500;
+  }
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    .delete{
+        width:20px;
+        cursor:pointer;
+       
+    }
+  }
+}

@@ -1,0 +1,40 @@
+// Dashboard.scss
+.dashboard-root {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 2rem;
+
+  .dashboard-card {
+    background: linear-gradient(to right, #fcfcfc, #e1f0f0);
+    border: 1px solid #fbf8f8;
+    border-radius: 8px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 250px; 
+
+    &:hover {
+      transform: translateY(-5px);
+      cursor: pointer;
+    }
+
+    img {
+      width: 55px; // Adjust as needed
+      height: 55px; // Adjust as needed
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+    p {
+      color: #090909;
+    }
+  }
+}

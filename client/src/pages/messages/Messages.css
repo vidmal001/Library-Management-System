@@ -1,0 +1,70 @@
+
+.chatSection {
+    height: 35rem;
+    display: flex;
+  }
+  
+  .allChatUsers {
+    flex: 1;
+  
+  }
+  .allChatUsersInput{
+    width:90%;
+    padding:10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  .chatPart {
+    flex: 1;
+  
+  }
+  
+  .chatPartWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:relative;
+  }
+  
+  .topChatSection{
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 20px;
+  }
+  .bottomChatSection{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sendMessageInput{
+    width:80%;
+    height: 90px;
+    padding: 10px;
+  }
+  
+  .sendMessageButton{
+     width:70px;
+     height: 40px;
+     border:none;
+     border-radius: 5px;
+     cursor:pointer;
+     background-color: rgb(86, 106, 236);
+     color: white;
+     margin-left: 10px;
+  }
+  
+  .allChatUsersWrapper,.chatPartWrapper{
+    padding: 10px;
+    height: 100%;
+  }
+  
+  .noChatOpen{
+    position:absolute;
+    top:40%;
+    left:10%;
+    font-size: 30px;
+    color:rgb(187, 193, 236);
+    cursor:default;
+  }
